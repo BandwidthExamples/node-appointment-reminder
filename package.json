@@ -4,8 +4,8 @@
   "description": "Bandwidth API Sample App for Appointment Reminder",
   "repository": "https://github.com/BandwidthExamples/node-appointment-reminder",
   "author": "avbel",
-	"license": "MIT",
-	"main": "lib/index.js",
+  "license": "MIT",
+  "main": "lib/index.js",
   "scripts": {
     "start": "node -e \"require('./lib/index')().then(app =>app.listen(process.env.PORT || 3000));\"",
     "lint": "xo",
@@ -16,12 +16,13 @@
     "debug": "^2.6.8",
     "koa": "^2.3.0",
     "koa-body": "^2.3.0",
+    "koa-router": "^7.2.1",
     "koa-static": "^4.0.1",
     "moment": "^2.18.1",
     "mongoose": "^4.11.2",
     "node-bandwidth": "^2.3.3"
-	},
-	"devDependencies": {
+  },
+  "devDependencies": {
     "ava": "^0.19.1",
     "supertest": "^3.0.0",
     "testdouble": "^2.1.2",
