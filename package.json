@@ -13,10 +13,12 @@
   },
   "dependencies": {
     "@bandwidth/node-bandwidth-extra": "^1.0.1",
+    "const": "^1.0.0",
     "debug": "^2.6.8",
     "koa": "^2.3.0",
     "koa-body": "^2.3.0",
     "koa-router": "^7.2.1",
+    "koa-session": "^5.4.0",
     "koa-static": "^4.0.1",
     "moment": "^2.18.1",
     "mongoose": "^4.11.2",
