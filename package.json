@@ -2,10 +2,15 @@
   "name": "node-appointment-reminder",
   "version": "1.0.0",
   "description": "Bandwidth API Sample App for Appointment Reminder",
-  "main": "index.js",
   "repository": "https://github.com/BandwidthExamples/node-appointment-reminder",
   "author": "avbel",
-  "license": "MIT",
+	"license": "MIT",
+	"main": "lib/index.js",
+  "scripts": {
+    "start": "node -e \"require('./lib/index')().then(app =>app.listen(process.env.PORT || 3000));\"",
+    "lint": "xo",
+    "test": "ava"
+  },
   "dependencies": {
     "@bandwidth/node-bandwidth-extra": "^1.0.1",
     "debug": "^2.6.8",
