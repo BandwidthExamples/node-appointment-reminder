@@ -61,6 +61,10 @@
     "esnext": true,
     "envs": [
       "node"
-    ]
+		],
+		"ignores": [
+			"assets/**",
+			"public/**"
+		]
   }
 }
