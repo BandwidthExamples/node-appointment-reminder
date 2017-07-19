@@ -7,7 +7,7 @@
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
-		"start": "node -e \"require('./lib/index')().then(app =>app.listen(process.env.PORT || 3000));\"",
+		"start": "node -e \"require('./lib/index')().then(app => {app.listen(process.env.PORT || 3000); console.log('Ready');});\"",
 		"scheduler": "node -e \"require('./lib/reminder-scheduler')();\"",
     "lint": "xo",
     "test": "ava",
