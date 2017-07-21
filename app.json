@@ -18,6 +18,9 @@
     },
     "BANDWIDTH_API_SECRET": {
       "description": "Your Bandwidth Api Secret"
-    }
+		},
+		"NPM_CONFIG_PRODUCTION": {
+			"value": false
+		}
   }
 }
