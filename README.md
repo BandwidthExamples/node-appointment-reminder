@@ -1,4 +1,4 @@
-## Appointment кeminder Node Example
+## Appointment Reminder Node Example
 
 [![Build Status](https://travis-ci.org/BandwidthExamples/node-appointment-reminder.svg?branch=master)](https://travis-ci.org/BandwidthExamples/node-appointment-reminder)
 
