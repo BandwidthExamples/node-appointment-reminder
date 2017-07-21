@@ -4,7 +4,7 @@ RUN mkdir /src
 
 WORKDIR /src
 ADD . /src
-RUN npm install
+RUN npm install && npm run build
 
 EXPOSE 3000
 
