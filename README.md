@@ -37,6 +37,7 @@ npm install # to install dependencies
 
 npm start # to start web app
 
+# in another terminal
 npm run scheduler # to start scheduler
 
 # then open external access to this app (for example via ngrok)
