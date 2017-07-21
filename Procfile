@@ -1,2 +1,1 @@
-web: npm start
-scheduler: npm run scheduler
+web: npm run heroku
