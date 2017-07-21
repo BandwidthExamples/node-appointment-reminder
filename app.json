@@ -5,8 +5,8 @@
   "keywords": [
     "node",
     "bandwidth",
-		"appointment",
-		"reminder"
+    "appointment",
+    "reminder"
   ],
   "addons": ["mongolab:sandbox"],
   "env": {
@@ -18,9 +18,9 @@
     },
     "BANDWIDTH_API_SECRET": {
       "description": "Your Bandwidth Api Secret"
-		},
-		"NPM_CONFIG_PRODUCTION": {
-			"value": false
-		}
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "value": false
+    }
   }
 }
