@@ -1,8 +1,7 @@
 const test = require('ava');
 
 test.serial('should fail if auth data is missing', t => {
-	const api = require('../lib/bandwidth');
-	t.truthy(api);
+	t.throws(() => require('../lib/bandwidth'));
 });
 
 test.serial('should return bandwidth api instance', t => {
