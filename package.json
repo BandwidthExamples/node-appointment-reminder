@@ -16,7 +16,7 @@
     "dev": "npm-run-all --parallel dev:*",
     "webpack": "webpack -d",
     "build": "webpack -p --env=prod",
-    "postinstall": "yarn run build"
+    "heroku-postbuild": "yarn run build"
   },
   "dependencies": {
     "@bandwidth/node-bandwidth-extra": "^1.0.1",
