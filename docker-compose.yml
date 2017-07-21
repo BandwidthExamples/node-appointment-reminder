@@ -8,6 +8,7 @@ services:
         environment:
             - PORT=3000
             - DATABASE_URL=mongodb://mongo/db
+            - DEBUG=*,-mquery
         ports:
             - "$PORT:3000"
     scheduler:
@@ -17,6 +18,7 @@ services:
         env_file: .env
         environment:
             - DATABASE_URL=mongodb://mongo/db
+            - DEBUG=reminder-scheduler
         command: npm run scheduler
 
     mongo:
