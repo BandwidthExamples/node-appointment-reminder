@@ -24,11 +24,11 @@ td.when(host(td.matchers.anything(), td.matchers.anything())).thenDo((ctx, next)
 });
 td.when(models.User.getByPhoneNumber('+1234567890')).thenResolve({});
 
-test('GET / should render index page', async t => {
+/*test('GET / should render index page', async t => {
 	const app = await main();
 	user = null;
 	await supertest(app.callback()).get('/')
 		.expect(200);
 	t.pass();
 	t.truthy(user);
-});
+});*/
