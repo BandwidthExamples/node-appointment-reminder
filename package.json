@@ -15,7 +15,8 @@
     "dev:server": "cross-env PORT=5000 npm start",
     "dev": "npm-run-all --parallel dev:*",
     "webpack": "webpack -d",
-    "build": "webpack -p --env=prod"
+		"build": "webpack -p --env=prod",
+		"heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@bandwidth/node-bandwidth-extra": "^1.0.1",
