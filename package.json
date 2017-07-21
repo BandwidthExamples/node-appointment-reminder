@@ -7,16 +7,16 @@
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": {
-		"start": "node -e \"require('./lib/index')().then(app => {app.listen(process.env.PORT || 3000); console.log('Ready');});\"",
-		"scheduler": "node -e \"require('./lib/reminder-scheduler')();\"",
+    "start": "node -e \"require('./lib/index')().then(app => {app.listen(process.env.PORT || 3000); console.log('Ready');});\"",
+    "scheduler": "node -e \"require('./lib/reminder-scheduler')();\"",
     "lint": "xo",
     "test": "ava",
     "dev:frontend-server": "webpack-dev-server -d -w",
     "dev:server": "cross-env PORT=5000 npm start",
     "dev": "npm-run-all --parallel dev:*",
     "webpack": "webpack -d",
-		"build": "webpack -p --env=prod",
-		"heroku-postbuild": "npm run build"
+    "build": "webpack -p --env=prod",
+    "heroku-postbuild": "yarn run build"
   },
   "dependencies": {
     "@bandwidth/node-bandwidth-extra": "^1.0.1",
@@ -29,8 +29,8 @@
     "koa-static": "^4.0.1",
     "moment": "^2.18.1",
     "mongoose": "4.10.0",
-		"node-bandwidth": "^2.3.3",
-		"vue": "^2.3.4",
+    "node-bandwidth": "^2.3.3",
+    "vue": "^2.3.4",
     "vue-router": "^2.7.0",
     "vue2-timepicker": "^0.1.4",
     "vuejs-datepicker": "^0.8.4"
@@ -63,10 +63,10 @@
     "esnext": true,
     "envs": [
       "node"
-		],
-		"ignores": [
-			"assets/**",
-			"public/**"
-		]
+    ],
+    "ignores": [
+      "assets/**",
+      "public/**"
+    ]
   }
 }
