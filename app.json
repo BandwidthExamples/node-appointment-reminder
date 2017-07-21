@@ -20,7 +20,7 @@
       "description": "Your Bandwidth Api Secret"
     },
     "NPM_CONFIG_PRODUCTION": {
-      "value": false
+      "value": "false"
     }
   }
 }
