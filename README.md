@@ -43,6 +43,8 @@ npm run scheduler # to start scheduler
 # then open external access to this app (for example via ngrok)
 # ngrok http 8080
 
+# Open in browser url shown by ngrok
+
 ```
 
 ### Via Docker
@@ -57,4 +59,7 @@ PORT=8080 docker-compose up -d
 # open external access to this app (for example via ngrok)
 # ngrok http 8080
 
+# Open in browser url shown by ngrok
+
 ```
+
