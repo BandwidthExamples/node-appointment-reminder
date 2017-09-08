@@ -7,7 +7,7 @@
         <div class="card-action inner"><button type="submit" class="button button--medium button--hover-go button--right" :disabled="disabled">{{actionTitle}}</button></div>
         <div class="card-action inner" v-if="$slots.footer">
             <slot name="footer"></slot>
-        </div>    
+        </div>
     </form>
 </template>
 
