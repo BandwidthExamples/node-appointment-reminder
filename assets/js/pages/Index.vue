@@ -19,7 +19,7 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div>
                     <b-field label="Name">
                         <input type="text" v-model="newReminder.name" required maxlength="60"></input>
@@ -32,17 +32,17 @@
                             <template v-for="n in notificationTypes">
                                 <input v-model="newReminder.notificationType" type="radio" :value="n" :key="n.id" name="notificationType"></input>
                                 <label @click="newReminder.notificationType = n">{{n}}</label>
-                            </template>    
+                            </template>
                         </div>
                     </b-field>
                 </div>
                 <div class="clearfix">
                     <button type="submit" class="button button--submit button--hover-go button--right pull-right" :disabled="newReminder.inProgress">Create</button>
-                </div>  
+                </div>
             </form>
         </b-accordion>
         <b-accordion title="Reminders" :is-active.sync="remindersActive">
-            <p v-if="reminders.length == 0">No reminders</p>
+            <p v-if="reminders.length == 0" class="no-reminders">No reminders</p>
             <div class="table-wrap" v-if="reminders.length > 0">
                 <table cellpadding="0" cellspacing="0" class="small reminders-table">
                     <thead>
@@ -192,5 +192,8 @@ export default {
 }
 .reminders-table{
     overflow: hidden;
+}
+.no-reminders {
+	color: var(--border-grey);
 }
 </style>

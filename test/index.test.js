@@ -24,15 +24,7 @@ td.when(host(td.matchers.anything(), td.matchers.anything())).thenDo((ctx, next)
 });
 td.when(models.User.getByPhoneNumber('+1234567890')).thenResolve({});
 
-test.serial('GET / should render index page', async t => {
-	const app = await main();
-	await supertest(app.callback()).get('/')
-		.expect(200)
-		.expect('Content-Type', /html/);
-	t.pass();
-});
-
-test.serial('it should provide user data', async t => {
+test('GET / should render index page', async t => {
 	const app = await main();
 	user = null;
 	await supertest(app.callback()).get('/');

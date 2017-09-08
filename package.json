@@ -16,10 +16,10 @@
     "dev": "npm-run-all --parallel dev:*",
     "webpack": "webpack -d",
     "build": "webpack -p --env=prod",
-		"heroku-postbuild": "yarn run build",
-		"heroku:server": "yarn start",
-		"heroku:scheduler": "yarn run scheduler",
-		"heroku": "npm-run-all --parallel heroku:*"
+    "heroku-postbuild": "yarn run build",
+    "heroku:server": "yarn start",
+    "heroku:scheduler": "yarn run scheduler",
+    "heroku": "npm-run-all --parallel heroku:*"
   },
   "dependencies": {
     "@bandwidth/node-bandwidth-extra": "^1.0.1",

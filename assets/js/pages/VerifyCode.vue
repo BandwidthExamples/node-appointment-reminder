@@ -13,6 +13,7 @@ import BSpacedContainer from '@components/BSpacedContainer.vue'
 import BForm from '@components/BForm.vue'
 import BField from '@components/BField.vue'
 import {postData} from '../request'
+import bus from '../bus'
 
 export default {
     data: () => ({
@@ -21,9 +22,10 @@ export default {
     }),
     methods: {
         send() {
-            const data = Object.assign({phoneNumber: this.$route.query.phoneNumber}, this.$data);
-            postData('/verify-code', data, () => {
-                this.$router.replace('/');
+            const data = Object.assign({phoneNumber: this.$route.query.phoneNumber}, this.$data)
+            postData('/verify-code', data, user => {
+								this.$router.replace('/')
+								bus.$emit('authorized', user)
             }, this.$data);
         }
     },
