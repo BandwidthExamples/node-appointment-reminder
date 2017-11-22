@@ -1,8 +1,15 @@
-## Appointment Reminder Node Example
+<div align="center">
 
-[![Build Status](https://travis-ci.org/BandwidthExamples/node-appointment-reminder.svg?branch=master)](https://travis-ci.org/BandwidthExamples/node-appointment-reminder)
+# Appointment Reminder Node Example
+
+<a href="http://dev.bandwidth.com"><img src="https://s3.amazonaws.com/bwdemos/BW_Voice.png"/></a>
+</div>
 
 Bandwidth Voice  API Sample App for Call Tracking, see http://ap.bandwidth.com/
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+[![Build Status](https://travis-ci.org/BandwidthExamples/node-appointment-reminder.svg?branch=master)](https://travis-ci.org/BandwidthExamples/node-appointment-reminder)
 
 ## Prerequisites
 - Configured Machine with Ngrok/Port Forwarding
